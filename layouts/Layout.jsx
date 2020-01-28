@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import Header from '../components/Header';
 
@@ -10,6 +12,6 @@ const layoutStyle = {
 export default (props) => (
   <div style={layoutStyle}>
     <Header />
-    {this.props.children}
+    {props.children}
   </div>
 );
