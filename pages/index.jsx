@@ -5,8 +5,8 @@ import PostLink from '../components/PostLink';
 export default () => (
   <Layout>
     <h1>Posts</h1>
-    <PostLink title="Post about Next.js" />
-    <PostLink title="Post about React" />
-    <PostLink title="Learning Redux" />
+    <PostLink id="Post about Next.js" />
+    <PostLink id="Post about React" />
+    <PostLink id="Learning Redux" />
   </Layout>
 );

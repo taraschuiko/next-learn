@@ -7,14 +7,14 @@ const linkStyle = {
   marginBottom: 4,
 };
 
-const PostLink = ({ title }) => (
-  <Link href={`/post?title=${title}`}>
-    <a href="/" style={linkStyle}>{title}</a>
+const PostLink = ({ id }) => (
+  <Link href="/p/[id]" as={`/p/${id}`}>
+    <a href="/" style={linkStyle}>{id}</a>
   </Link>
 );
 
 PostLink.propTypes = {
-  title: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default PostLink;
