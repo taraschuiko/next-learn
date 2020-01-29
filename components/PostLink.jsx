@@ -3,18 +3,19 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 const linkStyle = {
-  display: 'block',
+  display: 'flex',
   marginBottom: 4,
 };
 
-const PostLink = ({ id }) => (
-  <Link href="/p/[id]" as={`/p/${id}`}>
-    <a href="/" style={linkStyle}>{id}</a>
+const PostLink = ({ title, id }) => (
+  <Link href="/show/[id]" as={`/show/${id}`}>
+    <a href="/" style={linkStyle}>{title}</a>
   </Link>
 );
 
 PostLink.propTypes = {
-  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 export default PostLink;
